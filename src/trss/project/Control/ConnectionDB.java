@@ -19,7 +19,7 @@ public class ConnectionDB {
     
     public static Connection OpenConnection() throws SQLException{
         if(con== null)
-            con = (Connection) DriverManager.getConnection ("jdbc:mysql://localhost/db","root","khaled7229793");
+            con = (Connection) DriverManager.getConnection ("jdbc:mysql://localhost/db","root","");
         return con;
   
     }
