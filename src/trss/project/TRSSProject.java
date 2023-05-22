@@ -23,7 +23,7 @@ public class TRSSProject extends Application {
     public void start(Stage stage)throws IOException {
      
         // Specify the absolute path to the FXML file
-        String fxmlPath = "C:/Users/خالد/Documents/NetBeansProjects/TRSS Project/src/trss/project/View/LoginForm.fxml";
+        String fxmlPath = "C:\\Users\\abofa\\Documents\\NetBeansProjects\\TRSS\\src\\trss\\project\\View\\LoginForm.fxml";
         URL fxmlUrl = new File(fxmlPath).toURI().toURL();
         
         // Load the FXML file
