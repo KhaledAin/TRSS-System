@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="768.0" maxWidth="1024.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" styleClass="bady" stylesheets="@../Stylee1.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trss.project.ViewControl.HomeControl">
+   <children>
+      <Pane layoutX="248.0" prefHeight="768.0" prefWidth="776.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="248.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="105.0" layoutY="201.0" prefHeight="140.0" prefWidth="160.0" style="-fx-background-color: 5y4rt;">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="140.0" prefWidth="160.0" style="-fx-background-color: #393351; -fx-background-radius: 10;" styleClass="button5" />
+               </children>
+            </Pane>
+            <Pane layoutX="105.0" layoutY="420.0" prefHeight="140.0" prefWidth="160.0" style="-fx-background-color: 5y4rt;">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="140.0" prefWidth="160.0" style="-fx-background-color: #393351; -fx-background-radius: 10;" styleClass="button4" />
+               </children>
+            </Pane>
+            <Pane layoutX="336.0" layoutY="420.0" prefHeight="140.0" prefWidth="160.0" style="-fx-background-color: 5y4rt;">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="140.0" prefWidth="160.0" style="-fx-background-color: #393351; -fx-background-radius: 10;" styleClass="button4" />
+               </children>
+            </Pane>
+            <Pane layoutX="336.0" layoutY="201.0" prefHeight="140.0" prefWidth="160.0" style="-fx-background-color: 5y4rt;">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="140.0" prefWidth="160.0" style="-fx-background-color: #393351; -fx-background-radius: 10;" styleClass="button4" />
+               </children>
+            </Pane>
+            <Pane layoutX="564.0" layoutY="413.0" prefHeight="140.0" prefWidth="160.0" style="-fx-background-color: 5y4rt;">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="140.0" prefWidth="160.0" style="-fx-background-color: #393351; -fx-background-radius: 10;" styleClass="button4" />
+               </children>
+            </Pane>
+            <Pane layoutX="564.0" layoutY="201.0" prefHeight="140.0" prefWidth="160.0" style="-fx-background-color: 5y4rt;">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="140.0" prefWidth="160.0" style="-fx-background-color: #393351; -fx-background-radius: 10;" styleClass="button4" />
+               </children>
+            </Pane>
+            <Pane blendMode="SRC_ATOP" layoutX="133.0" layoutY="626.0" prefHeight="107.0" prefWidth="299.0" style="-fx-background-color: FA2C56; -fx-background-radius: 70;" />
+         </children>
+      </Pane>
+      <Pane layoutX="272.0" layoutY="-102.0" prefHeight="151.0" prefWidth="271.0" rotate="39.1" style="-fx-background-color: FA2C56; -fx-background-radius: 70;" />
+      <Pane prefHeight="768.0" prefWidth="246.0">
+         <children>
+            <Pane layoutY="73.0" prefHeight="76.0" prefWidth="246.0" style="-fx-background-color: FA2C56; -fx-background-radius: 14;">
+               <children>
+                  <Label layoutX="39.0" layoutY="17.0" prefHeight="42.0" prefWidth="179.0" text="Home Page" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <VBox layoutY="149.0" prefHeight="620.0" prefWidth="246.0" style="-fx-background-color: #393351;" styleClass="vbox-button">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#openProduct" prefHeight="65.0" prefWidth="335.0" text="Product" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="62.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/product.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Bodoni MT Bold Italic" size="18.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="button2" />
+                        <String fx:value="button-border" />
+                     </styleClass>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#openCustomer" prefHeight="65.0" prefWidth="335.0" text="Customer" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="62.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/customer.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Bodoni MT Bold Italic" size="18.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="button2" />
+                        <String fx:value="button-border" />
+                     </styleClass>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#openContract" prefHeight="65.0" prefWidth="335.0" text="Button" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="62.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../Desktop/TRSS%20project/product.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Bodoni MT Bold Italic" size="18.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="button2" />
+                        <String fx:value="button-border" />
+                     </styleClass>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#openUser" prefHeight="65.0" prefWidth="335.0" text="User" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="62.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/employee.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Bodoni MT Bold Italic" size="18.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="button2" />
+                        <String fx:value="button-border" />
+                     </styleClass>
+                  </Button>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
