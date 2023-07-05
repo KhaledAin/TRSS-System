@@ -36,22 +36,28 @@ public class LoginForm_CL {
     LoginControl lg = new LoginControl();
     
     
-    public void isSign(Event e) throws SQLException, IOException{
-        ad.setUsername(txtuser.getText());
-        ad.setPassword(txtpass.getText());
-        
-        if(lg.isLogin(ad)){
-            Node node = (Node) e.getSource();
-            Stage stage = (Stage) node.getScene().getWindow();
-            // stage.close();
-            Parent root = FXMLLoader.load(getClass().getResource("/trss/project/View/Home.fxml"));
-            Scene scene = new Scene(root);
-            stage.setScene(scene);
-            stage.show();
-            
+public void isSign(Event e) throws SQLException, IOException {
+    ad.setUsername(txtuser.getText());
+    ad.setPassword(txtpass.getText());
+
+    if (lg.isLogin(ad)) {
+        String role = lg.getUserRole(ad.getUsername()); // Assuming you have a method to retrieve the user's role from the database
+        Node node = (Node) e.getSource();
+        Stage stage = (Stage) node.getScene().getWindow();
+        Parent root;
+
+        if (role.equalsIgnoreCase("Admin")) {
+            root = FXMLLoader.load(getClass().getResource("/trss/project/View/Home.fxml"));
+        } else {
+            root = FXMLLoader.load(getClass().getResource("/trss/project/View/Home2.fxml"));
         }
-        else
-            lblmsg.setText("username or password is wrong!!");
+
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    } else {
+        lblmsg.setText("Username or password is wrong!");
     }
-    
+}
+
 }

@@ -18,9 +18,23 @@ public class LoginControl {
 
        st = ConnectionDB.OpenConnection().createStatement();
        
-       ResultSet  res= st.executeQuery("select * from admins where username ='"+ad.getUsername()+"' and password ='"+ad.getPassword()+"'");
+       ResultSet  res= st.executeQuery("select * from user where username ='"+ad.getUsername()+"' and password ='"+ad.getPassword()+"'");
        
        return res.next();
+    }
+    
+    
+        public String getUserRole(String username) throws SQLException {
+        st = ConnectionDB.OpenConnection().createStatement();
+
+        String query = "SELECT role FROM user WHERE username = '" + username + "'";
+        ResultSet result = st.executeQuery(query);
+
+        if (result.next()) {
+            return result.getString("role");
+        }
+
+        return null; // Return null or handle the case when the user role is not found
     }
     
 }

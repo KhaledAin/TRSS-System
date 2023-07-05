@@ -4,7 +4,6 @@
  */
 package trss.project;
 
-import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import javafx.application.Application;
@@ -15,17 +14,17 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author خالد
+ * author: خالد
  */
 public class TRSSProject extends Application {
-    
+
     @Override
-    public void start(Stage stage)throws IOException {
-     
-        // Specify the absolute path to the FXML file
-        String fxmlPath = "C:\\Users\\abofa\\Documents\\NetBeansProjects\\TRSS\\src\\trss\\project\\View\\LoginForm.fxml";
-        URL fxmlUrl = new File(fxmlPath).toURI().toURL();
-        
+    public void start(Stage stage) throws IOException {
+
+        // Specify the relative path to the FXML file
+        String fxmlPath = "/trss/project/View/LoginForm.fxml";
+        URL fxmlUrl = getClass().getResource(fxmlPath);
+
         // Load the FXML file
         FXMLLoader loader = new FXMLLoader(fxmlUrl);
         Parent root = loader.load();
@@ -34,17 +33,14 @@ public class TRSSProject extends Application {
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-     
+
     }
-       
-    
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         launch(args);
-        
     }
-    
+
 }

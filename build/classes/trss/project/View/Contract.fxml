@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trss.project.ViewControl.Contract_CL">
+   <children>
+      <Pane fx:id="rowpane" layoutY="142.0" prefHeight="530.0" prefWidth="1024.0">
+         <children>
+            <ComboBox fx:id="ProductNameCombo" layoutX="196.0" layoutY="89.0" prefWidth="150.0" style="-fx-border-color: black;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ComboBox>
+            <TextField fx:id="productidtxt" layoutX="14.0" layoutY="89.0" style="-fx-border-color: black;" />
+            <TextField fx:id="costtxt" layoutX="373.0" layoutY="89.0" style="-fx-border-color: black;" />
+            <Label layoutX="31.0" layoutY="50.0" text="Product ID">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="196.0" layoutY="50.0" text="Product Name">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="386.0" layoutY="52.0" text="Cost Per Hour">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="periodtxt" layoutX="544.0" layoutY="89.0" style="-fx-border-color: black;" />
+            <Label layoutX="557.0" layoutY="52.0" text="Period in Hour">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="totalitemtxt" layoutX="731.0" layoutY="89.0" style="-fx-border-color: black;" />
+            <Label layoutX="759.0" layoutY="50.0" text="Total Per Item">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="ProductNameCombo1" layoutX="196.0" layoutY="134.0" prefWidth="150.0" style="-fx-border-color: black;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ComboBox>
+            <TextField fx:id="productidtxt1" layoutX="14.0" layoutY="134.0" style="-fx-border-color: black;" />
+            <TextField fx:id="costtxt1" layoutX="373.0" layoutY="134.0" style="-fx-border-color: black;" />
+            <TextField fx:id="periodtxt1" layoutX="544.0" layoutY="134.0" style="-fx-border-color: black;" />
+            <TextField fx:id="totalitemtxt1" layoutX="731.0" layoutY="134.0" style="-fx-border-color: black;" />
+            <ComboBox fx:id="ProductNameCombo2" layoutX="196.0" layoutY="184.0" prefWidth="150.0" style="-fx-border-color: black;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ComboBox>
+            <TextField fx:id="productidtxt2" layoutX="14.0" layoutY="184.0" style="-fx-border-color: black;" />
+            <TextField fx:id="costtxt2" layoutX="373.0" layoutY="184.0" style="-fx-border-color: black;" />
+            <TextField fx:id="periodtxt2" layoutX="544.0" layoutY="184.0" style="-fx-border-color: black;" />
+            <TextField fx:id="totalitemtxt2" layoutX="731.0" layoutY="184.0" style="-fx-border-color: black;" />
+            <ComboBox fx:id="ProductNameCombo3" layoutX="197.0" layoutY="229.0" prefWidth="150.0" style="-fx-border-color: black;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ComboBox>
+            <TextField fx:id="productidtxt3" layoutX="16.0" layoutY="229.0" style="-fx-border-color: black;" />
+            <TextField fx:id="costtxt3" layoutX="375.0" layoutY="229.0" style="-fx-border-color: black;" />
+            <TextField fx:id="periodtxt3" layoutX="546.0" layoutY="229.0" style="-fx-border-color: black;" />
+            <TextField fx:id="totalitemtxt3" layoutX="734.0" layoutY="229.0" style="-fx-border-color: black;" />
+            <ComboBox fx:id="ProductNameCombo4" layoutX="197.0" layoutY="274.0" prefWidth="150.0" style="-fx-border-color: black;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ComboBox>
+            <TextField fx:id="productidtxt4" layoutX="16.0" layoutY="274.0" style="-fx-border-color: black;" />
+            <TextField fx:id="costtxt4" layoutX="375.0" layoutY="274.0" style="-fx-border-color: black;" />
+            <TextField fx:id="periodtxt4" layoutX="546.0" layoutY="274.0" style="-fx-border-color: black;" />
+            <TextField fx:id="totalitemtxt4" layoutX="733.0" layoutY="274.0" style="-fx-border-color: black;" />
+            <ComboBox fx:id="ProductNameCombo5" layoutX="198.0" layoutY="318.0" prefWidth="150.0" style="-fx-border-color: black;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ComboBox>
+            <TextField fx:id="productidtxt5" layoutX="17.0" layoutY="318.0" style="-fx-border-color: black;" />
+            <TextField fx:id="costtxt5" layoutX="376.0" layoutY="318.0" style="-fx-border-color: black;" />
+            <TextField fx:id="periodtxt5" layoutX="547.0" layoutY="318.0" style="-fx-border-color: black;" />
+            <TextField fx:id="totalitemtxt5" layoutX="734.0" layoutY="318.0" style="-fx-border-color: black;" />
+            <ComboBox fx:id="ProductNameCombo51" layoutX="198.0" layoutY="362.0" prefWidth="150.0" style="-fx-border-color: black;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ComboBox>
+            <TextField fx:id="productidtxt51" layoutX="17.0" layoutY="362.0" style="-fx-border-color: black;" />
+            <TextField fx:id="costtxt51" layoutX="376.0" layoutY="362.0" style="-fx-border-color: black;" />
+            <TextField fx:id="periodtxt51" layoutX="547.0" layoutY="362.0" style="-fx-border-color: black;" />
+            <TextField fx:id="totalitemtxt51" layoutX="734.0" layoutY="362.0" style="-fx-border-color: black;" />
+            <TextField fx:id="deposittxt" layoutX="408.0" layoutY="449.0" style="-fx-border-color: red;" />
+            <Label layoutX="450.0" layoutY="481.0" text="Deposit">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="totaltxt" layoutX="740.0" layoutY="449.0" style="-fx-border-color: red;" />
+            <Label layoutX="773.0" layoutY="481.0" text="Total">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="balancetxt" layoutX="144.0" layoutY="449.0" style="-fx-border-color: red;" />
+            <Label layoutX="186.0" layoutY="481.0" text="Balance">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="-9.0" prefHeight="142.0" prefWidth="1024.0" styleClass="bady" stylesheets="@../Stylee1.css">
+         <children>
+            <Label layoutX="40.0" layoutY="103.0" prefHeight="27.0" prefWidth="63.0" text="Date" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="362.0" layoutY="106.0" prefHeight="21.0" prefWidth="83.0" text="Contract ID" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="673.0" layoutY="106.0" prefHeight="21.0" prefWidth="116.0" text="Customer Name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="txtDate" layoutX="91.0" layoutY="104.0" style="-fx-border-color: blue;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></DatePicker>
+            <TextField fx:id="txtID" layoutX="456.0" layoutY="104.0" style="-fx-border-color: blue;" />
+            <ComboBox fx:id="CustomerCombo" cache="true" layoutX="792.0" layoutY="104.0" prefHeight="27.0" prefWidth="190.0" style="-fx-border-color: blue; -fx-background-color: white;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ComboBox>
+            <Label layoutX="366.0" prefHeight="61.0" prefWidth="293.0" style="-fx-background-color: FA2C56; -fx-background-radius: 33;" text="      Contract" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="38.0" />
+               </font>
+            </Label>
+            <Button fx:id="backbtn" layoutX="27.0" layoutY="13.0" mnemonicParsing="false" onAction="#backHome" prefHeight="61.0" prefWidth="89.0" style="-fx-border-color: white; -fx-border-width: 5;" styleClass="button2">
+               <graphic>
+                  <ImageView fitHeight="61.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="savebtn" layoutX="905.0" layoutY="15.0" mnemonicParsing="false" onAction="#saveContractToDatabase" prefHeight="75.0" prefWidth="89.0" style="-fx-border-color: white; -fx-border-width: 5;" styleClass="button2">
+               <graphic>
+                  <ImageView fitHeight="59.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/save.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

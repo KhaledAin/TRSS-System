@@ -4,6 +4,7 @@
  */
 package trss.project.Model;
 
+import java.time.LocalDate;
 /**
  *
  * @author خالد
@@ -12,7 +13,15 @@ public class ModelCustomer {
     
     private int id ;
     private String name , nic , adress , phone ;  
+     private LocalDate date;
 
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
 
     public int getId() {
         return id;

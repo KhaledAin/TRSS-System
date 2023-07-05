@@ -55,14 +55,46 @@ public class HomeControl {
             stage.show();
     }
             
+        
+        public void openReport(Event e) throws IOException{
+            Node node = (Node) e.getSource();
+            Stage stage = (Stage) node.getScene().getWindow();
+            // stage.close();
+            Parent root = FXMLLoader.load(getClass().getResource("/trss/project/View/Report.fxml"));
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+    }  
+        
+        
         public void openContract(Event e) throws IOException{
             Node node = (Node) e.getSource();
             Stage stage = (Stage) node.getScene().getWindow();
             // stage.close();
-            Parent root = FXMLLoader.load(getClass().getResource("/trss/project/View/AddContract.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/trss/project/View/Contract.fxml"));
             Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
-    }           
-            
+    } 
+        
+
+         public void logOut(Event e) throws IOException{
+            Node node = (Node) e.getSource();
+            Stage stage = (Stage) node.getScene().getWindow();
+            // stage.close();
+            Parent root = FXMLLoader.load(getClass().getResource("/trss/project/View/LoginForm.fxml"));
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+    } 
+         
+        public void openTracker(Event e) throws IOException{
+            Node node = (Node) e.getSource();
+            Stage stage = (Stage) node.getScene().getWindow();
+            // stage.close();
+            Parent root = FXMLLoader.load(getClass().getResource("/trss/project/View/Tracker.fxml"));
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+    }
 }
